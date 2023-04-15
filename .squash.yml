@@ -1,0 +1,14 @@
+deployments:
+  Hive:
+    filename:
+      ./docker-compose.yml
+    context_path:
+      ./
+    vm_size:
+      4GB
+    ready_wait:
+      # This will tell Squash to wait up to 20 min (1200 seconds) for a
+      # success response from the app. The count down only starts after
+      # the build process is finished.
+      1200
+	  allow_public_ports: 10000,8080
