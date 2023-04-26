@@ -9,4 +9,4 @@ deployments:
     ready_wait:
       1800
     allow_public_ports: 
-      10000,8080
+      20000,9090
